@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 
 class Button extends Component {
+    
     render (){
         return (
-            <div>welcome to button</div>
+            <button>{this.props.name}</button>
         );
     }
 }
 
+Button.propTypes = {
+    name: React.PropTypes.string,
+  };
 export default Button;
